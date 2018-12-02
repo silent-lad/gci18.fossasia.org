@@ -1,8 +1,10 @@
 # gci18.fossasia.org
 FOSSASIA Google Code-In Website 2018
-https://gci18.fossasia.org
+[gci18.fossasia.org](https://gci18.fossasia.org)
 
-This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+This is the repository for FOSSASIA's website for Google Code-In 2018, we at FOSSASIA intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [FOSSASIA Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+
+Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**
 
 ## Communication
 
@@ -66,12 +68,33 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
   img: Mentor's img 
   
 ```
+
+## How to add location marker to the map
+**Student's location:**
+- Get your geographic coordinates using a [geolocation finder](https://fossasia.github.io/geolocation/) (if you don't want to provide your exact coordinates you can use [this one](https://www.latlong.net/) to get general coordinates for your city or country) 
+- Copy your latitude and longitude and paste them into the respective lines in your student profile in the _data/students.yml file
+```yaml
+  lat: your latitude
+  lng: your longitude 
+```
+- The marker should appear in the given location containing your name/nickname you provided in your student profile
+
+**Mentor's location:**
+- Choose a GCI mentor and contact them asking for their permission before adding his/her location
+- Ask the mentor for their coordinates (latitude and longitude)
+- Paste their latitude and longitude and paste them into the respective lines in their mentor profile in the _data/mentors.yml file
+```yaml
+  lat: mentor's latitude
+  lng: mentor's longitude 
+```
+- The marker should appear in the given location containing the mentor's name
+
 ## How to add a New Project to the website
 -  Choose a FOSSASIA project
 
 - Ask for a picture or take it from github and set the size to 1366x566 px
 - Upload the picture to the img folder - with a suitable name
-- Add the mentor to the _data/orgprojects.yml file as shown below
+- Add the project to the _data/orgprojects.yml file as shown below
 
 ```yaml
 - title: Project name
@@ -80,6 +103,19 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
   github: Project github link
   try: URL where project is hosted 
 ```
+
+## How to add your video to the Videos section:
+- Make your video, you can search for open-source video editing software
+- Once your video is ready, post it on your YouTube channel (if don't have one - create it!)
+- After uploading the video to your channel add it to the _data/videos.yml file as shown below:
+
+```yaml
+- name: Title you want to be shown on the gci18.fossasia.org website (it's recommended to use the same as the video's youtube title, but you can choose a different one)
+  id: The YouTube ID of your video , it's the 11 characters after the v= in your video's link (e.g. for this link: https://www.youtube.com/watch?v=NFCcqIq84UI the id is: NFCcqIq84UI )
+  user: Your name that will be displayed on the page
+```
+Note: Your video must be uploaded after the 1st of January 2018 in order to display properly on the gci18.fossasia.org page
+
 ## How to add a language to the Thank you section:
 - Choose a language(probably one you're familiar with)
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it

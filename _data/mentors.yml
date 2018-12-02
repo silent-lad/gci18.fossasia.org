@@ -64,10 +64,14 @@
 - name: Jogendra Kumar
   image: jogendra.png
   github: jogendra
-
+  lat: 25.2665185
+  lng: 82.984087
+  
 - name: Abishek V Ashok
   image: AbishekVAshok.png
   github: abishekvashok
+  lat: 9.8974123
+  lng: 76.3253836
 
 - name: Nikit Bhandari
   image: nikitbhandari.jpeg
@@ -100,3 +104,23 @@
 - name: Mohit Kumar
   image: mohitkumar.png
   github: batbrain7
+
+- name: Akshat Jain
+  image: rsz_akshat_jain.png
+  github: Akshat-Jain
+  lat: 25.540780
+  lng: 84.851131
+
+- name: Tarun Kumar
+  image: Tarun Kumar.jpg
+  github: meets2tarun
+
+- name: Prateek Chanda
+  image: prateekiiest.jpg
+  github: prateekiiest
+
+- name: Sarnava Konar
+  image: Sarnava.jpg
+  github: sarnava1
+  lat: 22.6982
+  lng: 88.3895
